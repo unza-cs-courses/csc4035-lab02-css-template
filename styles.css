@@ -1,0 +1,274 @@
+/*
+ * Lab 2: CSS Fundamentals and Selectors
+ * CSC4035 Web Programming and Technologies
+ *
+ * Instructions:
+ * 1. Complete each TODO section below
+ * 2. Use the selector types specified in comments
+ * 3. Test your styles frequently in the browser
+ * 4. Use browser DevTools to debug issues
+ */
+
+/* ===========================================
+   TASK 1: CSS Custom Properties (Variables)
+   Define your color scheme using CSS variables
+   =========================================== */
+
+:root {
+    /* TODO: Define these CSS custom properties (variables)
+     * --primary-color: (dark color for headings)
+     * --secondary-color: (medium color for subheadings)
+     * --accent-color: (bright color for links/buttons)
+     * --text-color: (main text color)
+     * --background-color: (page background)
+     * --card-background: (card/section background)
+     */
+}
+
+/* ===========================================
+   TASK 2: CSS Reset / Base Styles
+   Apply universal reset and base typography
+   =========================================== */
+
+/* TODO: Universal selector - Apply box-sizing and reset margins/padding */
+* {
+    /* Your styles here */
+}
+
+/* TODO: Element selector - Style the body with:
+ * - font-family (use a system font stack)
+ * - font-size (16px base)
+ * - line-height (1.6)
+ * - Use your CSS variables for colors
+ */
+body {
+    /* Your styles here */
+}
+
+/* ===========================================
+   TASK 3: Typography Styles
+   Style headings and paragraphs
+   =========================================== */
+
+/* TODO: Element selectors - Style headings h1, h2, h3 */
+h1 {
+    /* font-size: 2.5rem, use --primary-color */
+}
+
+h2 {
+    /* font-size: 2rem, use --secondary-color */
+}
+
+h3 {
+    /* font-size: 1.5rem */
+}
+
+/* TODO: Element selector - Style paragraphs */
+p {
+    /* margin-bottom: 1rem */
+}
+
+/* ===========================================
+   TASK 4: Link Styles with Pseudo-classes
+   Style links with hover effects
+   =========================================== */
+
+/* TODO: Element selector - Default link styles */
+a {
+    /* Use --accent-color, remove default underline */
+}
+
+/* TODO: Pseudo-class selector - Hover state */
+a:hover {
+    /* Add underline or change color on hover */
+}
+
+/* TODO: Pseudo-class selector - Focus state for accessibility */
+a:focus {
+    /* Add visible focus indicator */
+}
+
+/* ===========================================
+   TASK 5: Class Selectors
+   Create reusable utility classes
+   =========================================== */
+
+/* TODO: Class selector - Highlight class for emphasis */
+.highlight {
+    /* Yellow/bright background, padding */
+}
+
+/* TODO: Class selector - Button styling */
+.btn {
+    /*
+     * display: inline-block
+     * padding
+     * background-color (use --accent-color)
+     * color: white
+     * border: none
+     * border-radius
+     * cursor: pointer
+     */
+}
+
+/* TODO: Pseudo-class - Button hover state */
+.btn:hover {
+    /* Darken background or add effect */
+}
+
+/* ===========================================
+   TASK 6: ID Selectors
+   Style specific sections by ID
+   =========================================== */
+
+/* TODO: ID selector - About section */
+#about {
+    /* Light blue or custom background */
+}
+
+/* TODO: ID selector - Contact section */
+#contact {
+    /* Light gray or custom background */
+}
+
+/* ===========================================
+   TASK 7: Attribute Selectors
+   Style elements based on attributes
+   =========================================== */
+
+/* TODO: Attribute selector - Required inputs */
+input[required],
+textarea[required],
+select[required] {
+    /* Add left border to indicate required */
+}
+
+/* ===========================================
+   TASK 8: Descendant Combinators
+   Style nested elements
+   =========================================== */
+
+/* TODO: Descendant combinator - Navigation list items */
+nav ul {
+    /* list-style: none, display for horizontal layout */
+}
+
+nav ul li {
+    /* display: inline-block, margin-right */
+}
+
+/* TODO: Descendant combinator - Navigation links */
+nav ul li a {
+    /* Specific navigation link styles */
+}
+
+/* ===========================================
+   TASK 9: Pseudo-classes for Lists
+   Style specific list items
+   =========================================== */
+
+/* TODO: Pseudo-class - First skill in list */
+.skills-list li:first-child {
+    /* Make it stand out - bold or different color */
+}
+
+/* TODO: Pseudo-class - Last skill in list */
+.skills-list li:last-child {
+    /* Optional: different styling */
+}
+
+/* ===========================================
+   TASK 10: Box Model - Project Cards
+   Apply padding, margin, border to cards
+   =========================================== */
+
+/* TODO: Class selector - Project card styling */
+.project-card {
+    /*
+     * Use --card-background for background
+     * padding (inner spacing)
+     * margin-bottom (outer spacing)
+     * border or box-shadow
+     * border-radius for rounded corners
+     */
+}
+
+/* ===========================================
+   TASK 11: Form Styling
+   Style form elements with box model
+   =========================================== */
+
+/* TODO: Class selector - Form container */
+form {
+    /* padding, border, background */
+}
+
+/* TODO: Class selector - Form groups */
+.form-group {
+    /* margin-bottom for spacing between fields */
+}
+
+/* TODO: Descendant combinator - Form labels */
+form label {
+    /* display: block, margin-bottom, font-weight */
+}
+
+/* TODO: Descendant combinator - Form inputs */
+form input,
+form textarea,
+form select {
+    /* width: 100%, padding, border, border-radius */
+}
+
+/* TODO: Pseudo-class - Input focus state */
+input:focus,
+textarea:focus,
+select:focus {
+    /* outline color using --accent-color, or border change */
+}
+
+/* ===========================================
+   TASK 12: Header and Footer
+   Style page header and footer
+   =========================================== */
+
+header {
+    /* background, padding, text alignment */
+}
+
+footer {
+    /* background, padding, text alignment */
+}
+
+/* TODO: Descendant combinator - Social links in footer */
+.social-links {
+    /* list-style: none, horizontal display */
+}
+
+.social-links li {
+    /* display: inline-block, margin */
+}
+
+/* ===========================================
+   SPECIFICITY CHALLENGE
+   Calculate the specificity of each selector below
+   and predict which style will apply to the target element.
+
+   Selector 1: nav ul li a { color: blue; }
+   Specificity: ____________
+
+   Selector 2: .nav-link { color: red; }
+   Specificity: ____________
+
+   Selector 3: #main-nav a { color: green; }
+   Specificity: ____________
+
+   My prediction for which color wins: ____________
+   Actual result after testing: ____________
+   =========================================== */
+
+/* Uncomment these to test specificity:
+nav ul li a { color: blue; }
+.nav-link { color: red; }
+#main-nav a { color: green; }
+*/

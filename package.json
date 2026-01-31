@@ -1,0 +1,17 @@
+{
+  "name": "csc4035-lab02-css",
+  "version": "1.0.0",
+  "description": "Lab 2: CSS Fundamentals - CSC4035 Web Programming",
+  "main": "index.html",
+  "scripts": {
+    "test": "node tests/visible/tests.js",
+    "grade": "bash tests/visible/auto-grade.sh"
+  },
+  "keywords": [
+    "css",
+    "selectors",
+    "box-model",
+    "csc4035"
+  ],
+  "license": "MIT"
+}

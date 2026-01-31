@@ -1,26 +1,17 @@
-# OS files
-.DS_Store
-Thumbs.db
-
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Temporary files
-*.tmp
-*.temp
-*.log
-
-# Node modules (if any npm dependencies added)
+# Dependencies
 node_modules/
 
-# Test output
-test_output.txt
-test_results.json
+# OS files
+.DS_Store
 
-# Instructor files (should not be in student repos)
-INSTRUCTOR-GUIDE.md
-.instructor/
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/

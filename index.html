@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - CSS Fundamentals</title>
+    <!-- TODO: Link your styles.css file here -->
+</head>
+<body>
+    <!--
+        Lab 2: CSS Fundamentals and Selectors
+        CSC4035 Web Programming and Technologies
+
+        Instructions:
+        1. Link the styles.css file in the head section
+        2. Complete the CSS tasks in styles.css
+        3. Add appropriate classes and IDs to elements below as needed
+        4. Test your styles in the browser
+    -->
+
+    <header>
+        <!-- TODO: Add class for styling -->
+        <h1>Your Name</h1>
+        <p>Web Developer | Student</p>
+    </header>
+
+    <nav id="main-nav">
+        <!-- TODO: Style this navigation horizontally using CSS -->
+        <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a student learning web development.</p>
+            <p>This page demonstrates CSS fundamentals including selectors, the box model, and color schemes.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <!-- TODO: Add class="highlight" to your top skill -->
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <!-- TODO: Add class="project-card" to each article -->
+            <article>
+                <h3>Project One</h3>
+                <p>Description of your first project. Explain what technologies you used and what problem it solves.</p>
+                <a href="#" class="btn">View Project</a>
+            </article>
+
+            <article>
+                <h3>Project Two</h3>
+                <p>Description of your second project. Share your learning experience and achievements.</p>
+                <a href="#" class="btn">View Project</a>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

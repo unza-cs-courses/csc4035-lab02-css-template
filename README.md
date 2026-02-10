@@ -26,7 +26,7 @@ By completing this lab, you will be able to:
 
 ## Your Assignment
 
-Check `ASSIGNMENT.md` for your personalized assignment theme (generated after you accept the assignment).
+Style your HTML portfolio page using CSS fundamentals. Follow the tasks below to add visual design, selectors, and the box model.
 
 ---
 

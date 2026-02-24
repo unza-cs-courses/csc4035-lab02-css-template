@@ -129,7 +129,7 @@ Check your visible test results in the "Actions" tab of your repository.
 2. Ensure all classes are applied in HTML
 3. Commit your changes: `git add . && git commit -m "Complete Lab 2"`
 4. Push to GitHub: `git push`
-5. Verify tests pass in the Actions tab
+5. Verify all tests pass locally with `npm test`
 
 ---
 

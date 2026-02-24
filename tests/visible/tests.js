@@ -2,8 +2,8 @@
  * Lab 2: CSS Fundamentals - Visible Test Suite
  * CSC4035 Web Programming and Technologies
  *
- * These tests run on every push via GitHub Actions.
- * Additional hidden tests will run after the deadline.
+ * Run these tests locally with: npm test
+ * Additional hidden tests will be used for final grading after the deadline.
  *
  * DO NOT MODIFY THIS FILE
  * Run with: npm test
@@ -289,7 +289,7 @@ console.log(`Score: ${score}%`);
 console.log('==========================================\n');
 
 console.log('Note: This is your visible test score (40% of final grade).');
-console.log('Additional hidden tests will run after the deadline.\n');
+console.log('Make sure all tests pass before pushing to GitHub.\n');
 
 if (failed > 0) {
     process.exit(1);
